@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Buscador de Bebidas y Recetas API Usando Zod, Zustand, React Router Dom
+Una aplicación web sencilla que permite buscar recetas de bebidas a partir de una amplia base de datos de una APi. La aplicación está desarrollada con React y utiliza la API de [TheCocktailDB](https://www.thecocktaildb.com/api.php) para obtener información sobre diferentes cócteles, ingredientes y recetas.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![webb app](https://github.com/sotoflore/Buscador-de-Bebidas-y-Recetas-API-con-Zod-Zustand-React-Router/blob/main/public/web-app.png)
+### Agregar a Favoritos
+![webb app](https://github.com/sotoflore/Buscador-de-Bebidas-y-Recetas-API-con-Zod-Zustand-React-Router/blob/main/public/web-app-add.png)
+### page Favoritos
+![webb app](https://github.com/sotoflore/Buscador-de-Bebidas-y-Recetas-API-con-Zod-Zustand-React-Router/blob/main/public/web-app-favoritos.png)
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
+- **React y TypeScript**: construir interfaces de usuario.
+- **Axios**: Cliente HTTP para realizar solicitudes a la API de cócteles.
+- **React Router DOM**: Gestión de rutas para la navegación dentro de la aplicación.
+- **Zustand**: Manejo del estado global de la aplicación.
+- **Zod**: Biblioteca para validación y definición de esquemas de datos.
+- **@headlessui/react** y **@heroicons/react**: Componentes y íconos accesibles para mejorar la UI.
+- **TailwindCSS**
+- **API de TheCocktailDB**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Instalación
+1. Clona el repositorio:
+```bash
+https://github.com/sotoflore/Buscador-de-Bebidas-y-Recetas-API-con-Zod-Zustand-React-Router.git
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Navega al directorio del proyecto:
+```bash
+cd cocktail-recipe-finder
 ```
+3. Instala las dependencias:
+```bash
+npm install
+```
+4. Ejecuta la aplicación en modo desarrollo:
+```bash
+npm run dev
+```
+La aplicación estará disponible en http://localhost:5173.
+
+## API
+Este proyecto utiliza la API de [TheCocktailDB](https://www.thecocktaildb.com/api.php). Consulta la documentación para más información sobre los datos que se pueden obtener.
+
